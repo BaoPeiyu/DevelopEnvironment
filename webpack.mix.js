@@ -25,10 +25,7 @@ mix
       ],
     },
   })
-  .js(
-    path.resolve(__dirname, 'resources/assets/js/main.js'),
-    path.resolve(__dirname, 'dist/assets/js/main.js')
-  )
+  .js(path.resolve(__dirname, 'resources/assets/js/main.js'), path.resolve(__dirname, 'dist/assets/js/main.js'))
   .eslint({
     fix: true,
   })
@@ -39,14 +36,8 @@ mix
   .options({
     autoprefixer: { remove: false },
   })
-  .ejs(
-    path.resolve(__dirname, 'resources/view/index.ejs'),
-    path.resolve(__dirname, 'dist')
-  )
-  .copyDirectory(
-    path.resolve(__dirname, 'public/'),
-    path.resolve(__dirname, 'dist/assets/')
-  )
+  .ejs(path.resolve(__dirname, 'resources/view/index.ejs'), path.resolve(__dirname, 'dist'))
+  .copyDirectory(path.resolve(__dirname, 'public/'), path.resolve(__dirname, 'dist/assets/'))
   .browserSync({
     startPath: '/',
     proxy: false,
