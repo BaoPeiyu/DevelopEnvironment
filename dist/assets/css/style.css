@@ -1,0 +1,9 @@
+h2 {
+  text-align: center;
+}
+
+body {
+  background-color: rgb(81, 61, 61);
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}

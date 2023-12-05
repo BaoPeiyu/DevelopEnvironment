@@ -1,0 +1,8 @@
+@use "layout/footer.scss" as *;
+
+$body-color: rgb(81 61 61);
+
+body {
+  background-color: $body-color;
+  text-decoration:solid
+}
