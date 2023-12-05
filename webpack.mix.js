@@ -4,6 +4,8 @@ require('laravel-mix-ejs')
 require('laravel-mix-clean')
 require('laravel-mix-eslint')
 
+Mix.manifest.refresh = (_) => void 0
+
 mix
   .setPublicPath('dist/')
   .clean()
