@@ -1,3 +1,8 @@
 {
-  "extends": "stylelint-config-standard-scss"
+  "ignoreFiles": ["/dist/*"],
+  "plugins": ["stylelint-scss"],
+  "rules": {
+    "prettier/prettier": [true, { "singleQuote": true, "tabWidth": 2 }]
+  },
+  "extends": ["stylelint-config-standard", "stylelint-config-standard-scss", "stylelint-config-prettier"]
 }

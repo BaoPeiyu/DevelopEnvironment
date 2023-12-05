@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require('path')
 const mix = require('laravel-mix')
 require('laravel-mix-ejs')
 require('laravel-mix-clean')
@@ -22,8 +22,8 @@ mix
             },
           },
         },
-      ]
-    }
+      ],
+    },
   })
   .js(
     path.resolve(__dirname, 'resources/assets/js/main.js'),
@@ -37,7 +37,7 @@ mix
     path.resolve(__dirname, 'dist/assets/css/style.css')
   )
   .options({
-    autoprefixer: { remove: false }
+    autoprefixer: { remove: false },
   })
   .ejs(
     path.resolve(__dirname, 'resources/view/index.ejs'),
@@ -51,7 +51,5 @@ mix
     startPath: '/',
     proxy: false,
     server: 'dist',
-    files:[
-      'dist/**/*',
-    ]
-  });
+    files: ['dist/**/*'],
+  })

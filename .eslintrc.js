@@ -9,9 +9,7 @@ module.exports = {
       env: {
         node: true,
       },
-      files: [
-        '.eslintrc.{js,cjs}',
-      ],
+      files: ['.eslintrc.{js,cjs}'],
       parserOptions: {
         sourceType: 'script',
       },
@@ -21,6 +19,9 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
+  ignorePatterns: '/dist',
   rules: {
+    'prettier/prettier': 'error',
   },
-};
+  extends: ['eslint:recommended', 'plugin:prettier/recommended', 'eslint-config-prettier'],
+}

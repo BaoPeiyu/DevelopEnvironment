@@ -11,7 +11,7 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils */ "./resources/assets/js/utils.js");
 
-(0,_utils__WEBPACK_IMPORTED_MODULE_0__["default"])();
+(0,_utils__WEBPACK_IMPORTED_MODULE_0__.test)();
 console.log('Hello');
 
 /***/ }),
@@ -24,12 +24,16 @@ console.log('Hello');
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   test: () => (/* binding */ test),
+/* harmony export */   test2: () => (/* binding */ test2)
 /* harmony export */ });
 var test = function test() {
   console.log('aaa');
 };
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (test);
+var test2 = function test2() {
+  console.log('bbb');
+};
+
 
 /***/ }),
 

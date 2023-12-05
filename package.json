@@ -15,7 +15,8 @@
     "lint:js": "eslint resources/**/*.js",
     "lint:js:fix": "eslint --fix resources/**/*.js",
     "lint:css": "stylelint \"resources/**/**/*.scss\"",
-    "lint:css:fix": "stylelint --fix \"resources/**/**/*.scss\""
+    "lint:css:fix": "stylelint --fix \"resources/**/**/*.scss\"",
+    "format": "prettier . --write"
   },
   "keywords": [],
   "author": "",
@@ -30,7 +31,9 @@
     "cross-env": "^7.0.3",
     "ejs": "^3.1.9",
     "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-vue": "^9.19.2",
     "eslint-webpack-plugin": "^4.0.1",
     "html-webpack-plugin": "^5.5.3",
@@ -38,9 +41,12 @@
     "laravel-mix-clean": "^0.1.0",
     "laravel-mix-ejs": "^2.0.1",
     "laravel-mix-eslint": "^0.2.0",
+    "prettier": "^3.1.0",
     "resolve-url-loader": "^5.0.0",
     "sass": "^1.69.5",
     "sass-loader": "^12.6.0",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-prettier": "^4.1.0",
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"

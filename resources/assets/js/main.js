@@ -1,4 +1,4 @@
-import test from './utils';
+import { test } from './utils'
 
-test();
-console.log('Hello');
+test()
+console.log('Hello')
